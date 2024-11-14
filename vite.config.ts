@@ -3,10 +3,11 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/todo/',
   plugins: [react()],
   test: {
-    environment: 'jsdom', // Эмуляция браузерного окружения
-    globals: true, // Включение глобальных переменных (включая expect)
-    setupFiles: ['./src/setupTests.ts'], // Для настройки jest-dom matchers
+    environment: 'jsdom',
+    globals: true,
+    setupFiles: ['./src/setupTests.ts'],
   },
 })
