@@ -45,7 +45,7 @@ const App: React.FC = () => {
 
     return (
         <div
-            className="max-w-[40rem] flex flex-col items-center mt-10 mx-auto border border-solid border-[#D1D5DB] p-2 rounded-md">
+            className="bg-slate-100 max-w-[40rem] flex flex-col items-center mt-10 mx-4 sm:mx-auto border border-solid border-[#D1D5DB] p-2 rounded-md">
             <h1 className="text-4xl font-bold text-gray-800 mb-2">To-Do List</h1>
 
             <div className="w-full flex items-center">
@@ -53,7 +53,7 @@ const App: React.FC = () => {
                     value={newTask}
                     onChange={handleInputChange}
                     placeholder="Enter a new task"
-                    className={'mr-2'}
+                    className={'mr-2 w-10 sm:w-auto'}
                 />
                 <Button onClick={addTask}>Add task</Button>
             </div>
